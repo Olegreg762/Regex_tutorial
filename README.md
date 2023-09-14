@@ -1,6 +1,7 @@
-# Title (replace with your title)
+# Email Format Regex
 
-Introductory paragraph (replace this with your text)
+  I will be breaking down a Regular Expression(Regex) from email address format.<br> 
+  This is the regex that will be going over here `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Summary
 
