@@ -13,18 +13,19 @@ The next section of the pattern `([\da-z\.-]+)`. This section looks for a digit 
 <br>
 The final part of the pattern `([a-z\.]{2,6})` will look for a string of lowercase letters and `.` that will be between 2 and 6 characters in length.
 
-Regex are made up of Components. The most common Components or a Regex are:<br>
-  Anchors: 
+Regex are made up of Components. The most common of these for Regex are:<br>
+
+  Anchors:<br> 
     Denote the where the pattern begins with a `^` and where the pattern ends with the `$` symbol.
 
-  Character Classes: 
+  Character Classes:<br> 
     Define the specific character sets that will be used in the pattern. We see this in the regex I am going over here, an example being `\d` which defines the digits 0-9
 
-  Quantifiers:
-    Qua
+  Quantifiers:<br>
+    Allows you to specify how many of the characters in a grouping should be match. It can be done in a couple different ways. If you did not need a preceding grouping to matched but it can be matched you woul use the quantifier `*`. In our example regex we see the use of the `+` quantifier which means the preceding grouping must match at least once.
 
-  Alternation:
-
+  Alternation:<br>
+    
 
 ## Table of Contents
 
@@ -61,4 +62,4 @@ Flags are used to modify the behavior of the pattern. The would be added to the 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Greg and I am currently making a career pivot into the tech industry. I am continuing my education and building skills needed to accomplish this goal. You can contact me on my [Linkedin](https://www.linkedin.com/in/greg-stevenson-422931a9/) and see more of my work on my [Github](https://github.com/Olegreg762/)
