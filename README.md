@@ -13,6 +13,19 @@ The next section of the pattern `([\da-z\.-]+)`. This section looks for a digit 
 <br>
 The final part of the pattern `([a-z\.]{2,6})` will look for a string of lowercase letters and `.` that will be between 2 and 6 characters in length.
 
+Regex are made up of Components. The most common Components or a Regex are:<br>
+  Anchors: 
+    Denote the where the pattern begins with a `^` and where the pattern ends with the `$` symbol.
+
+  Character Classes: 
+    Define the specific character sets that will be used in the pattern. We see this in the regex I am going over here, an example being `\d` which defines the digits 0-9
+
+  Quantifiers:
+    Qua
+
+  Alternation:
+
+
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -38,7 +51,11 @@ The final part of the pattern `([a-z\.]{2,6})` will look for a string of lowerca
 
 ### The OR Operator
 
+The "OR" operator in a regex pattern would be `|` and this would define inside the pattern to find a match for either one character set OR a second character set. An example would be `a|b` the pattern would need either `a` OR `b` but not both. The example regex does not use a OR operator
+
 ### Flags
+
+Flags are used to modify the behavior of the pattern. The would be added to the end of the pattern an example of a flag would be placing a `i` to make a pattern case insensitive. The regex I am going over here does not have any flags.
 
 ### Character Escapes
 
