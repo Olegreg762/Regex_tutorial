@@ -32,15 +32,15 @@ The example email regex pattern as with all regex begins with a `^` and the patt
 
 ### Quantifiers
 
-Quantifiers allow you to specify how many of the characters in a grouping should be match. It can be done in a couple different ways. If you did not need a preceding grouping to matched but it can be matched you woul use the quantifier `*`. In our example regex we see the use of the `+` quantifier which means the preceding grouping must match at least once.
+Quantifiers allow you to specify how many of the characters in a grouping should be match. It can be done in a couple different ways. If you did not need a preceding grouping to matched but it can be matched you woul use the quantifier `*`. In our example regex we see the use of the `+` quantifier which means the preceding grouping must match at least once. The email regex also uses the quanifier `{2,6}` which requires the preceding string to be between 2 and 6 characters in length.
 
 ### Grouping Constructs
 
-The `()` defines a group of characters that should be matched in the string. We see three groupings in our example regex `([a-z0-9_\.-]+)`, `([\da-z\.-]+)`, `([a-z\.]{2,6})`. Each one of these defines what should be matched in the string.
+The `()` defines a group of characters that should be matched in the string. We see three groupings in our example regex `([a-z0-9_\.-]+)`, `([\da-z\.-]+)`, `([a-z\.]{2,6})`. Each one of these defines what should be matched in the string. We can also see the use of the quantifier `+` which adds the requirement for the preceding group to must match at least once woth the next.
 
 ### Bracket Expressions
 
-Brackets `[]` are used to define the specific set of characters to be matched and in what order to be matched in.
+Brackets `[]` are used to define the specific set of characters to be matched and in what order to be matched in the pattern. `[a-z0-9_\.-]`, `[\da-z\.-]`, `[a-z\.]` are all examples of the bracket expressions in use with the email pattern. Unlike the group constructs they do not contain 
 
 ### Character Classes
 
@@ -56,6 +56,8 @@ Flags are used to modify the behavior of the pattern. The would be added to the 
 
 ### Character Escapes
 
+The example expression has the character escape `\.` which will remove the special meaning of 
+'`.`' character and have the pattern look for the actual character `'.'`(period). The special meaning that any character can be matched, for example `x.y` would be a pattern. In that pattern and character inbetween `x` and `y` will be a valid match. 
 ## Author
 
 My name is Greg and I am currently making a career pivot into the tech industry. I am continuing my education and building skills needed to accomplish this goal. You can contact me on my [Linkedin](https://www.linkedin.com/in/greg-stevenson-422931a9/) and see more of my work on my [Github](https://github.com/Olegreg762/)
