@@ -13,20 +13,6 @@ The next section of the pattern `([\da-z\.-]+)`. This section looks for a digit 
 <br>
 The final part of the pattern `([a-z\.]{2,6})` will look for a string of lowercase letters and `.` that will be between 2 and 6 characters in length.
 
-Regex are made up of Components. The most common of these for Regex are:<br>
-
-  Anchors:<br> 
-    Denote the where the pattern begins with a `^` and where the pattern ends with the `$` symbol.
-
-  Character Classes:<br> 
-    Define the specific character sets that will be used in the pattern. We see this in the regex I am going over here, an example being `\d` which defines the digits 0-9
-
-  Quantifiers:<br>
-    Allows you to specify how many of the characters in a grouping should be match. It can be done in a couple different ways. If you did not need a preceding grouping to matched but it can be matched you woul use the quantifier `*`. In our example regex we see the use of the `+` quantifier which means the preceding grouping must match at least once.
-
-  Alternation:<br>
-    
-
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -42,13 +28,23 @@ Regex are made up of Components. The most common of these for Regex are:<br>
 
 ### Anchors
 
+The example email regex pattern as with all regex begins with a `^` and the pattern ends with the `$` symbol.
+
 ### Quantifiers
+
+Quantifiers allow you to specify how many of the characters in a grouping should be match. It can be done in a couple different ways. If you did not need a preceding grouping to matched but it can be matched you woul use the quantifier `*`. In our example regex we see the use of the `+` quantifier which means the preceding grouping must match at least once.
 
 ### Grouping Constructs
 
+The `()` defines a group of characters that should be matched in the string. We see three groupings in our example regex `([a-z0-9_\.-]+)`, `([\da-z\.-]+)`, `([a-z\.]{2,6})`. Each one of these defines what should be matched in the string.
+
 ### Bracket Expressions
 
+Brackets `[]` are used to define the specific set of characters to be matched and in what order to be matched in.
+
 ### Character Classes
+
+Character Classes define the specific character sets that will be used in the pattern. We see this in the email regex. An example from the email regex being `\d` which defines the digits 0-9
 
 ### The OR Operator
 
